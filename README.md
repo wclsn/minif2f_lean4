@@ -1,5 +1,6 @@
 # MiniF2F
 **An updated version of lean4 minif2f [https://github.com/rah4927/lean-dojo-mew/tree/main]**
+
 **Note: This repository is a fork of the original OpenAI miniF2F repository [https://github.com/openai/miniF2F](https://github.com/openai/miniF2F), with additional data and many formal statement fixes.**
 
 MiniF2F is a formal mathematics benchmark (translated across multiple formal systems) consisting of
