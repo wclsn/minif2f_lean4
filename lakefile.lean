@@ -10,7 +10,7 @@ package «minif2f_lean4» where
   -- add any additional package configuration options here
 
 require mathlib from git
-  "https://github.com/leanprover-community/mathlib4.git" @ "v4.6.0-rc1"
+  "https://github.com/leanprover-community/mathlib4.git" @ "v4.8.0-rc1"
 
 @[default_target]
 lean_lib «Minif2fLean4» where
