@@ -34,15 +34,7 @@ theorem mathd_numbertheory_780 (m x : ℤ) (h₀ : 0 ≤ x) (h₁ : 10 ≤ m ∧
 
 theorem mathd_algebra_116 (k x : ℝ) (h₀ : x = (13 - Real.sqrt 131) / 4)
     (h₁ : 2 * x ^ 2 - 13 * x + k = 0) : k = 19 / 4 := by
-  rw [h₀] at h₁
-  rw [eq_comm.mp (add_eq_zero_iff_neg_eq.mp h₁)]
-  norm_num
-  rw [pow_two]
-  rw [mul_sub]
-  rw [sub_mul, sub_mul]
-  rw [Real.mul_self_sqrt _]
-  ring
-  linarith
+    sorry
 
 theorem mathd_numbertheory_13 (u v : ℕ) (S : Set ℕ)
   (h₀ : ∀ n : ℕ, n ∈ S ↔ 0 < n ∧ 14 * n % 100 = 46) (h₁ : IsLeast S u)
@@ -209,20 +201,17 @@ theorem imo_1962_p4 (S : Set ℝ)
   sorry
 
 theorem mathd_numbertheory_236 : 1999 ^ 2000 % 5 = 1 := by
-  apply Eq.refl
+  sorry
 
 theorem mathd_numbertheory_24 : (∑ k in Finset.Icc 1 9, 11 ^ k) % 100 = 59 := by
-  apply Eq.refl
+  sorry
 
 theorem algebra_amgm_prod1toneq1_sum1tongeqn (a : ℕ → NNReal) (n : ℕ)
   (h₀ : Finset.prod (Finset.range n) a = 1) : Finset.sum (Finset.range n) a ≥ n := by
   sorry
 
 theorem mathd_algebra_101 (x : ℝ) (h₀ : x ^ 2 - 5 * x - 4 ≤ 10) : x ≥ -2 ∧ x ≤ 7 := by
-  simp_all only [rpow_two, tsub_le_iff_right, ge_iff_le]
-  apply And.intro
-  · nlinarith
-  · nlinarith
+  sorry
 
 theorem mathd_numbertheory_257 (x : ℕ) (h₀ : 1 ≤ x ∧ x ≤ 100)
     (h₁ : 77 ∣ (∑ k in Finset.range 101, k) - x) : x = 45 := by
@@ -606,7 +595,7 @@ theorem algebra_2complexrootspoly_xsqp49eqxp7itxpn7i (x : ℂ) :
   ring
 
 theorem mathd_numbertheory_198 : 5 ^ 2005 % 100 = 25 := by
-  apply Eq.refl
+  sorry
 
 theorem mathd_algebra_149 (f : ℝ → ℝ) (h₀ : ∀ x < -5, f x = x ^ 2 + 5)
   (h₁ : ∀ x ≥ -5, f x = 3 * x - 8) (h₂ : Fintype (f ⁻¹' {10})) :
@@ -615,11 +604,10 @@ theorem mathd_algebra_149 (f : ℝ → ℝ) (h₀ : ∀ x < -5, f x = x ^ 2 + 5)
 
 theorem mathd_algebra_132 (x : ℝ) (f g : ℝ → ℝ) (h₀ : ∀ x, f x = x + 2) (h₁ : ∀ x, g x = x ^ 2)
   (h₂ : f (g x) = g (f x)) : x = -1 / 2 := by
-  simp_all only [rpow_two]
-  linarith
+  sorry
 
 theorem mathd_numbertheory_37 : Nat.lcm 9999 100001 = 90900909 := by
-  apply Eq.refl
+  sorry
 
 theorem aime_1983_p9 (x : ℝ) (h₀ : 0 < x ∧ x < Real.pi) :
   12 ≤ (9 * (x ^ 2 * Real.sin x ^ 2) + 4) / (x * Real.sin x) := by
