@@ -116,10 +116,10 @@ theorem amc12_2001_p9 (f : ℝ → ℝ) (h₀ : ∀ x > 0, ∀ y > 0, f (x * y) 
     _ = 5 / 2 := by norm_num
 
 -- Solution encoded in theorem statement
-theorem imo_1965_p1 (x : ℝ) (h₀ : 0 ≤ x) (h₁ : x ≤ 2 * π)
+theorem imo_1965_p1 (x : ℝ) (h₀ : 0 ≤ x) (h₁ : x ≤ 2 * Real.pi)
   (h₂ : 2 * Real.cos x ≤ abs (Real.sqrt (1 + Real.sin (2 * x)) - Real.sqrt (1 - Real.sin (2 * x))))
   (h₃ : abs (Real.sqrt (1 + Real.sin (2 * x)) - Real.sqrt (1 - Real.sin (2 * x))) ≤ Real.sqrt 2) :
-  π / 4 ≤ x ∧ x ≤ 7 * π / 4 := by
+  Real.pi / 4 ≤ x ∧ x ≤ 7 * Real.pi / 4 := by
   sorry
 
 theorem mathd_numbertheory_48 (b : ℕ) (h₀ : 0 < b) (h₁ : 3 * b ^ 2 + 2 * b + 1 = 57) : b = 4 := by
@@ -196,8 +196,8 @@ theorem imo_1962_p4 (S : Set ℝ)
     S =
       { x : ℝ |
         ∃ m : ℤ,
-          x = π / 2 + m * π ∨
-            x = π / 4 + m * π / 2 ∨ x = π / 6 + m * π / 6 ∨ x = 5 * π / 6 + m * π / 6 } := by
+          x = Real.pi / 2 + m * Real.pi ∨
+            x = Real.pi / 4 + m * Real.pi / 2 ∨ x = Real.pi / 6 + m * Real.pi / 6 ∨ x = 5 * Real.pi / 6 + m * Real.pi / 6 } := by
   sorry
 
 theorem mathd_numbertheory_236 : 1999 ^ 2000 % 5 = 1 := by
@@ -815,8 +815,8 @@ theorem mathd_algebra_159 (b : ℝ) (f : ℝ → ℝ)
 theorem aime_1997_p11 (x : ℝ)
     (h₀ :
       x =
-        (∑ n in Finset.Icc (1 : ℕ) 44, Real.cos (n * π / 180)) /
-          ∑ n in Finset.Icc (1 : ℕ) 44, Real.sin (n * π / 180)) :
+        (∑ n in Finset.Icc (1 : ℕ) 44, Real.cos (n * Real.pi / 180)) /
+          ∑ n in Finset.Icc (1 : ℕ) 44, Real.sin (n * Real.pi / 180)) :
     Int.floor (100 * x) = 241 := by
   sorry
 
@@ -892,7 +892,7 @@ theorem mathd_algebra_89 (b : ℝ) (h₀ : b ≠ 0) :
   (7 * b ^ 3) ^ 2 * (4 * b ^ 2) ^ (-(3 : ℤ)) = 49 / 64 := by
   sorry
 
-theorem imo_1966_p4 (n : ℕ) (x : ℝ) (h₀ : ∀ k : ℕ, 0 < k → ∀ m : ℤ, x ≠ m * π / 2 ^ k)
+theorem imo_1966_p4 (n : ℕ) (x : ℝ) (h₀ : ∀ k : ℕ, 0 < k → ∀ m : ℤ, x ≠ m * Real.pi / 2 ^ k)
   (h₁ : 0 < n) :
   (∑ k in Finset.Icc 1 n, 1 / Real.sin (2 ^ k * x)) = 1 / Real.tan x - 1 / Real.tan (2 ^ n * x) := by
   sorry

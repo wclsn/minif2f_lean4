@@ -6,8 +6,10 @@ Authors: Kunhao Zheng, Stanislas Polu, David Renshaw, OpenAI GPT-f
 ! This file was ported from Lean 3 source module valid and edited by Kaiyu Yang.
 -/
 import Minif2fLean4.minif2f_import
-open BigOperators Real Nat Topology
-
+open BigOperators
+open Real
+open Nat
+open Topology
 
 theorem mathd_algebra_478
   (b h v : ℝ)
@@ -47,7 +49,7 @@ theorem imo_1969_p2
   (h₁ : ∀ x, y x = ∑ i in Finset.range k, ((Real.cos (a i + x)) / (2^i)))
   (h₂ : y m = 0)
   (h₃ : y n = 0) :
-  ∃ t : ℤ, m - n = t * π := by sorry
+  ∃ t : ℤ, m - n = t * Real.pi := by sorry
 
 theorem mathd_algebra_44
   (s t : ℝ)
@@ -144,7 +146,7 @@ theorem mathd_algebra_398
   63 * a = 80 * c := by sorry
 
 theorem imo_1963_p5 :
-  Real.cos (π / 7) - Real.cos (2 * π / 7) + Real.cos (3 * π / 7) = 1 / 2 := by sorry
+  Real.cos (Real.pi / 7) - Real.cos (2 * Real.pi / 7) + Real.cos (3 * Real.pi / 7) = 1 / 2 := by sorry
 
 theorem mathd_numbertheory_430
   (a b c : ℕ)
@@ -1225,7 +1227,7 @@ theorem mathd_numbertheory_222
 theorem aime_1999_p11
   (m : ℚ)
   (h₀ : 0 < m)
-  (h₁ : ∑ k in Finset.Icc (1 : ℕ) 35, Real.sin (5 * k * π / 180) = Real.tan (m * π / 180))
+  (h₁ : ∑ k in Finset.Icc (1 : ℕ) 35, Real.sin (5 * k * Real.pi / 180) = Real.tan (m * Real.pi / 180))
   (h₂ : (m.num:ℝ) / m.den < 90) :
   ↑m.den + m.num = 177 := by sorry
 
